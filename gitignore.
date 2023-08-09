@@ -1,0 +1,4 @@
+examples/
+venv/
+*venv
+/aws.cfg
