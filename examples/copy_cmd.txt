@@ -1,1 +1,0 @@
-aws s3 cp ./Documents/GitHub/nd027-Data-Engineering-Data-Lakes-AWS-Exercises-main/project/starter/customer s3://sticky-aws-bucket/customer/landing --recursive
