@@ -2,4 +2,4 @@ examples/
 spark/
 venv/
 *venv
-/aws.cfg
+*aws.cfg*
