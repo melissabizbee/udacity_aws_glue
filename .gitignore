@@ -1,0 +1,7 @@
+examples/
+spark/
+venv
+aws.cfg
+*/udacity_aws_glue/data
+AWScli
+data/
