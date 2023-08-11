@@ -1,4 +1,5 @@
 examples/
+spark/
 venv/
 *venv
 /aws.cfg

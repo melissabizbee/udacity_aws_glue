@@ -1,8 +1,10 @@
-CREATE EXTERNAL TABLE `accelerometer_landing`(
-  `user` string COMMENT 'from deserializer', 
-  `timestamp` bigint COMMENT 'from deserializer', 
+CREATE EXTERNAL TABLE IF NOT EXISTS `stedi`.`accelerometer_trusted`(
+  `user` string COMMENT 'email address', 
+  `timeStamp` bigint COMMENT 'from deserializer', 
   `x` float COMMENT 'from deserializer', 
-  `y` float COMMENT 'from deserializer')
+  `y` float COMMENT 'from deserializer', 
+  `z` float COMMENT 'from deserializer'
+  )
 ROW FORMAT SERDE 
   'org.openx.data.jsonserde.JsonSerDe' 
 WITH SERDEPROPERTIES ( 
@@ -12,8 +14,8 @@ STORED AS INPUTFORMAT
 OUTPUTFORMAT 
   'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
 LOCATION
-  's3://sticky-aws-bucket/accelerometer/landing'
+  's3://stedi-aws-project/trusted/accelerometer'
 TBLPROPERTIES (
   'classification'='json', 
   'has_encrypted_data'='FALSE', 
-  'transient_lastDdlTime'='1691484100')
+  'transient_lastDdlTime'='1691484394')
