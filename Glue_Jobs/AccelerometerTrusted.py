@@ -2,8 +2,6 @@
 # from customers who agreed to share their data for research purposes (Trusted Zone) - creating a Glue Table called accelerometer_trusted.
 
 
-# see ./images/accelerometer_trusted.png for query results in Athena
-
 
 
 import sys

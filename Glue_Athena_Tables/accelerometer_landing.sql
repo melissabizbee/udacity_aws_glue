@@ -14,7 +14,7 @@ STORED AS INPUTFORMAT
 OUTPUTFORMAT 
   'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
 LOCATION
-  's3://s3://stedi-aws-project/landing/customer'
+  's3://stedi-aws-project/landing/accelerometer'
 TBLPROPERTIES (
   'classification'='json', 
   'has_encrypted_data'='FALSE', 
