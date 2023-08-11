@@ -4,4 +4,5 @@ venv
 aws.cfg
 */udacity_aws_glue/data
 AWScli
-data/
+*/data/
+ignorefile/
